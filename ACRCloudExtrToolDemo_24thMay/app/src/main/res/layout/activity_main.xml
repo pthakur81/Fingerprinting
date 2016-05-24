@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/rec"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="recognizer" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingTop="15dip"
+                android:layout_centerHorizontal="true"
+                android:textColor="#343434"
+                android:textSize="20dip"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
